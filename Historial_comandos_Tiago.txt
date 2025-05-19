@@ -1,0 +1,51 @@
+history
+sudo apt update
+sudo apt install tree
+git
+mkdir repogit
+ls
+cd repogit/
+ls
+git clone https://github.com/upszot/UTN-FRA_SO_Examenes.git
+git clone https://github.com/TiagoEsposito/TP_AYSO1
+./UTN-FRA_SO_Examenes/202410/script_Precondicion.sh
+ls
+rm -rf UTN-FRA_SO_Examenes/
+ssh-keygen -t ed25519
+cat $HOME/.ssh/*.pub
+ls
+cd TP_AYSO1/
+pwd
+ls -l
+cat /etc/os-release
+grep HOME_URL /etc/os-release 
+whoami
+echo “Usuario=$(whoami)” > datos_usuario.txt
+ls
+git add .
+git config --global user.email "TU-email"
+git config --global user.email "tiagoesposito06@gmail.com"
+git config --global user.name
+git config --global user.name "TiagoEsposito"
+git commit -m "ADD: agregado 1er
+ejercicio sobre datos_usuarios.txt" 
+git status
+git push
+grep "model name" /proc/cpuinfo | head -n1 >>
+grep "model name" /proc/cpuinfo | head -n1 >> datos_usuario.txt 
+cat <<EOF >> README.md
+Alumno: Tiago Esposito
+Division: 313
+Turno: Noche
+EOF
+
+git add README.md datos_usuarios.txt
+git commit -m "ADD: Añadiendo Readme y datos de usuario"
+git push
+ls
+git add .
+git push
+ls
+git add README.md 
+git add datos_usuario.txt 
+history -a
